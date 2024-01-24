@@ -43,6 +43,11 @@
   background: linear-gradient(to top, #ec008c, #fc6767);
 }
 
+.black-gradient {
+  background: #000000;
+  background: -webkit-linear-gradient(to top, #000000, #333333);
+  background: linear-gradient(to top, #000000, #333333);
+}
 /* canvas- styles */
 .canvas-loader {
   width: 1rem;
