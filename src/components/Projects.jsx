@@ -23,7 +23,7 @@ const ProjectCard = ({ index, name, image, description, tags, source_code_link, 
             or simply use:
           </p>
           <p className=" text-[14px]">
-            Email:<span className="text-secondary"> edina1@nroff.no</span>
+            Email:<span className="text-secondary"> edina1@noroff.no</span>
           </p>
           <p className=" mb-10 text-[14px]">
             Password: <span className=" text-secondary "> 11111111</span>
