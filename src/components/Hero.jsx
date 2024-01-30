@@ -11,10 +11,17 @@ const Hero = () => {
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I&apos;m <span className="text-brand font-normal">Edina</span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            <p className={`${styles.heroSubText} mt-2 mb-10`}>
               I'm a front-end developer dedicated to shaping exceptional digital experiences through careful attention
               to design details.
             </p>
+            <a
+              href="/Edina-Isztojka-CV-2024-eng.pdf"
+              download="Edina-Isztojka-CV-2024-eng.pdf"
+              className="outline outline-1 outline-brand rounded-lg py-2 px-8  hover:bg-brand"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>

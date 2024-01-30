@@ -11,29 +11,36 @@ import SectionWrapper from "../hoc/SectionWrapper";
 const ProjectCard = ({ index, name, image, description, tags, source_code_link, demo_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.95)}>
-      <div className="bg-tertiary rounded-2xl sm:w-[360px] w-full relative  ">
-        <img src={image} alt={name} className="w-full h-[400px] object-contain rounded-t-2xl" />
-        <NavLink
-          to={source_code_link}
-          className="absolute top-7 left-7 w-6 h-6 z-[10] bg-primary inline-block rounded-full flex items-center justify-center"
-        >
-          <FaGithub />
-        </NavLink>
-        <NavLink
-          to={demo_link}
-          className="absolute top-7 left-14 w-6 h-6 z-[10] bg-primary inline-block rounded-full flex items-center justify-center"
-        >
-          <FaGlobe />
-        </NavLink>
-        <div className="p-5">
+      <div className="bg-tertiary rounded-2xl flex flex-col items-center xl:flex-row mx-auto mt-5 ">
+        <img src={image} alt={name} className="flex-1 w-full xl:w-[600px] h-[600px] object-cover  p-5" />
+
+        <div className="p-5 flex-1 ">
           <h3 className=" text-[24px] mt-1">{name}</h3>
-          <p className="text-secondary mt-2 text-[14px]">{description}</p>
+          <p className="text-secondary mt-2 mb-10 text-[14px]">{description}</p>
+          <h4>Build with:</h4>
           <div className="flex gap-2">
             {tags.map((tag, index) => (
               <p key={index} className={`${tag.color} mt-4 p-1 text-black font-semibold text-[12px]`}>
                 #{tag.name}
               </p>
             ))}
+          </div>
+
+          <div className="flex gap-3 justify-start mt-20">
+            <h4>Githube code</h4>
+            <NavLink
+              to={source_code_link}
+              className=" w-6 h-6 z-[10] bg-primary hover:bg-brand inline-block rounded-full flex items-center justify-center"
+            >
+              <FaGithub />
+            </NavLink>
+            <h4>Live site:</h4>
+            <NavLink
+              to={demo_link}
+              className=" w-6 h-6 z-[10] bg-primary hover:bg-brand inline-block rounded-full flex items-center justify-center"
+            >
+              <FaGlobe />
+            </NavLink>
           </div>
         </div>
       </div>
@@ -55,7 +62,7 @@ const Projects = () => {
         I present to you a selection of projects I have both designed and developed. Please peruse these endeavors that
         showcase my skills and capabilities in the realm of design and development.
       </motion.p>
-      <div className="mt20 flex flex-wrap sm:justify-center gap-7 mt-20">
+      <div className="mt-20">
         {projects.map((project, index) => (
           <ProjectCard key={index} index={index} {...project} />
         ))}
