@@ -12,12 +12,23 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About me</h2>
       </motion.div>
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[20px] max-w-3xl leading-[30px]">
-        I am a front-end developer with experience in TypeScript and JavaScript, and experience in frameworks like
-        React. I am a quick learner and collaborate closely with clients to create efficient, scalable, and
-        user-friendly solutions that solve real-world problems. Let&apos;s work together and turn awesome ideas into
-        reality!
-      </motion.p>
+      <motion.ul
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[20px] max-w-3xl leading-[30px] space-y-5 "
+      >
+        <li>
+          My passion for web development and design began a few years ago when I decided to self-educate. I took some
+          courses and quickly realized that this is something I can do full time. Further deep diving into development
+          led me to the next stage, and I recently graduated in Front-End development from Noroff School of Technology
+          and Digital Media.{" "}
+        </li>
+        <li>
+          My goal is to become a full-stack developer, embracing the challenges that come with it. The joy of crafting
+          seamless user experiences and the thrill of solving complex problems drive my commitment to this ever-evolving
+          field.
+        </li>
+        <li>Let's work together and turn awesome ideas into reality!</li>
+      </motion.ul>
     </>
   );
 };

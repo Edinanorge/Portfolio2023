@@ -80,30 +80,20 @@ const educations = [
     school_name: "Noroff-School of technology and digital media",
 
     date: "Jan 2022 - Feb 2024",
-    points: [
-      "The curriculum is designed to give students hands-on experience in designing and implementing engaging user interfaces.",
-      "The program equips students with the skills needed to thrive in the dynamic field of web development.",
-    ],
+    grade: "Higher Professional Degree",
   },
   {
     title: "Department of Social Science",
     school_name: "Sapientia Hungarian University",
 
     date: "Sept 2007 - June 2010",
-    points: [
-      "The curriculum includes practical tools like SPSS, enhancing students'research and analytical capabilities",
-      "The program is designed to equip students with a strong foundation in social science theories and methodologies",
-      "Students graduate with a well-rounded understanding of societal dynamics and the skills necessary for careers in diverse social science fields",
-    ],
+    grade: "Bachelor Degree",
   },
   {
     title: "Matematikk og Informatikk",
     school_name: "Kos Karoly",
     date: "Sept 2003 - June 2007",
-    points: [
-      "The curriculum spans various mathematical and informatics disciplines, providing a robust foundation in both fields.",
-      "The program is designed to equip students with a deep understanding of mathematics and informatics, preparing them for challenges and real-world applications",
-    ],
+    grade: "",
   },
 ];
 
@@ -111,7 +101,7 @@ const projects = [
   {
     name: "Holidaze holidays",
     description:
-      "This is a web-based platform designed to enable users to seamlessly search, book, and manage holiday stays from various providers. The project draws inspiration from Airbnb and is meticulously built with the assistance of a provided API.",
+      "This is a web-based platform designed to enable users to search, book, and manage holiday stays from various providers. The project draws inspiration from Airbnb and is meticulously built with the assistance of a provided API.",
     tags: [
       {
         name: "react",
@@ -155,7 +145,7 @@ const projects = [
   {
     name: "Noroff Marked",
     description:
-      "This is an auction platform that empowers users to effortlessly list items for bidding and place bids on items submitted by fellow users. It's a dynamic platform designed to enhance the auction experience. Built with the assistance of a provided API",
+      "This is an auction platform that empowers users to list items for bidding and place bids on items submitted by fellow users. It's a dynamic platform designed to enhance the auction experience. Built with the assistance of a provided API",
     tags: [
       {
         name: "JavaScript",

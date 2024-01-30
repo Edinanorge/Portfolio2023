@@ -1,10 +1,9 @@
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 
 const Hero = () => {
   return (
     <section className="h-screen relative">
-      <div className={`${styles.paddingX} absolute inset-0 z-[10] top-[120px] max-w-7xl mx-auto flex items-center `}>
+      <div className={`${styles.paddingX} absolute inset-0  max-w-7xl mx-auto flex items-center `}>
         <div className="flex flex-col justify-start items-start mt-5 ">
           <div className="h-1 sm:w-80 w-40 primary-gradient" />
           <div>
@@ -25,7 +24,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <EarthCanvas />
     </section>
   );
 };

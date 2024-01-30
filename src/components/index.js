@@ -1,4 +1,4 @@
-import { EarthCanvas, StarsCanvas } from "./canvas";
+import StarsCanvas from "./Stars";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -8,4 +8,4 @@ import Contact from "./Contact";
 import Education from "./Education";
 import Footer from "./Footer";
 
-export { Hero, Navbar, About, Skills, Projects, Education, Contact, EarthCanvas, StarsCanvas, Footer };
+export { Hero, Navbar, About, Skills, Projects, Education, Contact, StarsCanvas, Footer };
