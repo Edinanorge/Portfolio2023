@@ -2,8 +2,6 @@
 import holidaz from "../assets/holidaze.png";
 import stop_shop from "../assets/stop_shop.png";
 import noroff_marked from "../assets/noroff_marked.png";
-import rainydays from "../assets/rainydays.jpg";
-import blog from "../assets/blog.jpg";
 
 //icons
 import html from "../assets/html.svg";
@@ -168,50 +166,6 @@ const projects = [
     image: noroff_marked,
     source_code_link: "https://github.com/Edinanorge/Semester-project-2.git",
     demo_link: "https://noroffmarked.netlify.app",
-  },
-  {
-    name: "Rainy Days",
-    description: "",
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-gradient",
-      },
-      {
-        name: "REST API",
-        color: "green-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-gradient",
-      },
-    ],
-    auth: false,
-    image: rainydays,
-    source_code_link: "https://github.com/Noroff-FEU-Assignments/cross-course-project-Edinanorge",
-    demo_link: "https://happy-cray-ed1521.netlify.app/",
-  },
-  {
-    name: "Mommy moods",
-    description: "",
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-gradient",
-      },
-      {
-        name: "REST API",
-        color: "green-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-gradient",
-      },
-    ],
-    auth: false,
-    image: blog,
-    source_code_link: "https://github.com/Noroff-FEU-Assignments/project-exam-1-Edinanorge.git",
-    demo_link: "https://spectacular-marigold-3f357f.netlify.app/",
   },
 ];
 
