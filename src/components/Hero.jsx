@@ -15,8 +15,8 @@ const Hero = () => {
               to design details.
             </p>
             <a
-              href="/Edina-Isztojka-CV-2024-eng.pdf"
-              download="Edina-Isztojka-CV-2024-eng.pdf"
+              href="/Edina_Isztojka_resume_eng_2024.pdf"
+              download="Edina_Isztojka_resume_eng_2024.pdf"
               className="outline outline-1 outline-brand rounded-lg py-2 px-8  hover:bg-brand"
             >
               Download CV
