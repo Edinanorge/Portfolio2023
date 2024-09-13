@@ -14,7 +14,7 @@ const Hero = () => {
               I'm a front-end developer who loves turning ideas into beautiful, user-friendly websites. Let's create
               something special together.
             </p>
-            <div className="flex gap-4">
+            <div className="flex shrink flex-col gap-4 sm:flex-row">
               <a
                 href="/Edina_Isztojka_resume_eng_2024.pdf"
                 download="Edina_Isztojka_resume_eng_2024.pdf"
@@ -26,7 +26,7 @@ const Hero = () => {
                 href="https://github.com/Edinanorge"
                 className="outline outline-1 outline-brand rounded-lg py-2 px-8  hover:bg-brand"
               >
-                Checkout my Github
+                Check out Github
               </a>
             </div>{" "}
           </div>
