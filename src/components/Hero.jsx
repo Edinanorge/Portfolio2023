@@ -11,16 +11,24 @@ const Hero = () => {
               Hi, I&apos;m <span className="text-brand font-normal">Edina</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 mb-10`}>
-              I'm a front-end developer dedicated to shaping exceptional digital experiences through careful attention
-              to design details.
+              I'm a front-end developer who loves turning ideas into beautiful, user-friendly websites. Let's create
+              something special together.
             </p>
-            <a
-              href="/Edina_Isztojka_resume_eng_2024.pdf"
-              download="Edina_Isztojka_resume_eng_2024.pdf"
-              className="outline outline-1 outline-brand rounded-lg py-2 px-8  hover:bg-brand"
-            >
-              Download CV
-            </a>
+            <div className="flex gap-4">
+              <a
+                href="/Edina_Isztojka_resume_eng_2024.pdf"
+                download="Edina_Isztojka_resume_eng_2024.pdf"
+                className="outline outline-1 outline-brand rounded-lg py-2 px-8  hover:bg-brand"
+              >
+                Download CV
+              </a>
+              <a
+                href="https://github.com/Edinanorge"
+                className="outline outline-1 outline-brand rounded-lg py-2 px-8  hover:bg-brand"
+              >
+                Checkout my Github
+              </a>
+            </div>{" "}
           </div>
         </div>
       </div>

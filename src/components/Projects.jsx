@@ -10,8 +10,12 @@ import SectionWrapper from "../hoc/SectionWrapper";
 
 const ProjectCard = ({ index, name, image, description, tags, source_code_link, demo_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.95)}>
-      <div className="bg-tertiary rounded-2xl flex flex-col items-center xl:flex-row mx-auto mt-5 z-[10]">
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.95)} className="mb-5">
+      <div
+        className={`bg-tertiary rounded-2xl flex flex-col xl:flex-row ${
+          index % 2 !== 0 ? "xl:flex-row-reverse" : ""
+        } items-center z-[10]`}
+      >
         <img src={image} alt={name} className="flex-1 w-full xl:w-[600px] h-[600px] object-cover  p-5" />
 
         <div className="p-5 flex-1 ">
@@ -38,7 +42,7 @@ const ProjectCard = ({ index, name, image, description, tags, source_code_link, 
           </div>
 
           <div className="flex gap-3 justify-start mt-20">
-            <h4>Githube code</h4>
+            <h4>Github code</h4>
             <NavLink
               to={source_code_link}
               className=" w-6 h-6 z-[10] bg-primary hover:bg-brand inline-block rounded-full flex items-center justify-center"
